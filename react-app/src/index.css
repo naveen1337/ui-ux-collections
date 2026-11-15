@@ -5,6 +5,9 @@
   --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
 
   --color-primary: #0f62fe;
+  --color-primary-hover: #0353e9;
+  --color-secondary-hover: #474747;
+  --color-danger-hover: #b82520;
   --color-secondary: #8a3ffc;
   --color-success: #24a148;
   --color-warning: #f1c21b;

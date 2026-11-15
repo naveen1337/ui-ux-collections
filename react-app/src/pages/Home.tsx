@@ -21,6 +21,11 @@ const components = [
     description: "Date range picker with presets and calendar selection.",
     href: "/date-picker",
   },
+  {
+    name: "Button",
+    description: "Carbon-style buttons: primary, secondary, tertiary, ghost, danger and icon-only.",
+    href: "/buttons",
+  },
 ];
 
 export function Home() {

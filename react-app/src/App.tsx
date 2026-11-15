@@ -5,6 +5,7 @@ import { Metrics } from "./pages/Metrics";
 import { NavbarPage } from "./pages/Navbar";
 import { MultiSelectPage } from "./pages/MultiSelect";
 import { DatePickerPage } from "./pages/DatePicker";
+import { ButtonsPage } from "./pages/Buttons";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/navbar" element={<NavbarPage />} />
           <Route path="/multi-select" element={<MultiSelectPage />} />
           <Route path="/date-picker" element={<DatePickerPage />} />
+          <Route path="/buttons" element={<ButtonsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

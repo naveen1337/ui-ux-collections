@@ -31,6 +31,37 @@
       ]
     },
     {
+      "name": "button",
+      "framework": "react",
+      "path": "components/buttons/react/button.tsx",
+      "variants": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "ghost",
+        "danger",
+        "icon-only",
+        "sm",
+        "md",
+        "lg",
+        "disabled"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.primary-hover",
+        "color.secondary-hover",
+        "color.error",
+        "color.danger-hover",
+        "color.surface-hover",
+        "color.subtle",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": [
+        "icons/react/add-icon"
+      ]
+    },
+    {
       "name": "warning-icon",
       "framework": "react",
       "path": "components/icons/react/warning-icon.tsx",

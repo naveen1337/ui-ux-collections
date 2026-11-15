@@ -4,7 +4,7 @@ import { AppNavbar } from "../components/app_navbar";
 const menus = [
   {
     label: "Components",
-    items: ["Metric Card", "Navbar", "Multi Select"],
+    items: ["Metric Card", "Navbar", "Multi Select", "Date Picker", "Button"],
   },
 ];
 
@@ -12,6 +12,8 @@ const menuRoutes: Record<string, string> = {
   "Metric Card": "/metrics",
   Navbar: "/navbar",
   "Multi Select": "/multi-select",
+  "Date Picker": "/date-picker",
+  Button: "/buttons",
 };
 
 export function Layout() {
