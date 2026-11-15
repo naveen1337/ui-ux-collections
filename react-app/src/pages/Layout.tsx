@@ -4,7 +4,7 @@ import { AppNavbar } from "../components/app_navbar";
 const menus = [
   {
     label: "Components",
-    items: ["Metric Card", "Navbar", "Multi Select", "Date Picker", "Button", "Input"],
+    items: ["Metric Card", "Navbar", "Multi Select", "Date Picker", "Single Date Picker", "Button", "Input"],
   },
 ];
 
@@ -13,6 +13,7 @@ const menuRoutes: Record<string, string> = {
   Navbar: "/navbar",
   "Multi Select": "/multi-select",
   "Date Picker": "/date-picker",
+  "Single Date Picker": "/single-date-picker",
   Button: "/buttons",
   Input: "/inputs",
 };

@@ -22,6 +22,11 @@ const components = [
     href: "/date-picker",
   },
   {
+    name: "Single Date Picker",
+    description: "Single date picker with manual entry and calendar selection.",
+    href: "/single-date-picker",
+  },
+  {
     name: "Button",
     description: "Carbon-style buttons: primary, secondary, tertiary, ghost, danger and icon-only.",
     href: "/buttons",
