@@ -28,6 +28,7 @@ const menus = [
       "Button",
       "Input",
       "Node Sidebar",
+      "Resource Card",
     ],
   },
 ];
@@ -80,6 +81,13 @@ const sidebarCategories: NodeCategory[] = [
         favourite: true,
         recent: true,
       },
+      {
+        id: "resource-card",
+        label: "Resource Card",
+        icon: <FileSearchIcon className="h-4 w-4" />,
+        tags: ["new"],
+        recent: true,
+      },
     ],
   },
 ];
@@ -94,6 +102,7 @@ const menuRoutes: Record<string, string> = {
   Button: "/buttons",
   Input: "/inputs",
   "Node Sidebar": "/node-sidebar",
+  "Resource Card": "/cards",
 };
 
 const nodeRoutes: Record<string, string> = {
@@ -107,6 +116,7 @@ const nodeRoutes: Record<string, string> = {
   "single-date-picker": "/single-date-picker",
   "form-progress": "/form-progress",
   "metric-card": "/metrics",
+  "resource-card": "/cards",
 };
 
 function Content({ children }: { children: ReactNode }) {

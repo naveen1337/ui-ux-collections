@@ -11,6 +11,7 @@ import { ButtonsPage } from "./pages/Buttons";
 import { FormProgressPage } from "./pages/FormProgress";
 import { InputsPage } from "./pages/Inputs";
 import { NodeSidebarPage } from "./pages/NodeSidebar";
+import { Cards } from "./pages/Cards";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/form-progress" element={<FormProgressPage />} />
           <Route path="/inputs" element={<InputsPage />} />
           <Route path="/node-sidebar" element={<NodeSidebarPage />} />
+          <Route path="/cards" element={<Cards />} />
         </Route>
       </Routes>
     </BrowserRouter>
