@@ -10,6 +10,7 @@ import { SingleDatePickerPage } from "./pages/SingleDatePicker";
 import { ButtonsPage } from "./pages/Buttons";
 import { FormProgressPage } from "./pages/FormProgress";
 import { InputsPage } from "./pages/Inputs";
+import { NodeSidebarPage } from "./pages/NodeSidebar";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/buttons" element={<ButtonsPage />} />
           <Route path="/form-progress" element={<FormProgressPage />} />
           <Route path="/inputs" element={<InputsPage />} />
+          <Route path="/node-sidebar" element={<NodeSidebarPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
