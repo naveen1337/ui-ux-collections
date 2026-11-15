@@ -1,0 +1,68 @@
+{
+  "name": "ui-ux-collections",
+  "components": [
+    {
+      "name": "metric-card",
+      "framework": "react",
+      "path": "components/metric-cards/react/metric-card.tsx",
+      "variants": ["default", "unit", "trend", "caption", "alert", "menu", "accent", "light-theme", "interactive"],
+      "tokens": [
+        "color.primary",
+        "color.secondary",
+        "color.success",
+        "color.warning",
+        "color.error"
+      ],
+      "dependencies": ["icons/react/warning-icon", "icons/react/kebab-icon", "icons/react/arrow-up-icon", "icons/react/arrow-down-icon"]
+    },
+    {
+      "name": "warning-icon",
+      "framework": "react",
+      "path": "components/icons/react/warning-icon.tsx",
+      "variants": ["default"],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "kebab-icon",
+      "framework": "react",
+      "path": "components/icons/react/kebab-icon.tsx",
+      "variants": ["default"],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "arrow-up-icon",
+      "framework": "react",
+      "path": "components/icons/react/arrow-up-icon.tsx",
+      "variants": ["default"],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "arrow-down-icon",
+      "framework": "react",
+      "path": "components/icons/react/arrow-down-icon.tsx",
+      "variants": ["default"],
+      "tokens": [],
+      "dependencies": []
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "primary": "#0f62fe",
+      "secondary": "#8a3ffc",
+      "success": "#24a148",
+      "warning": "#f1c21b",
+      "error": "#da1e28",
+      "info": "#1192e8",
+      "bg": "#161616",
+      "surface": "#262626",
+      "surface-hover": "#393939",
+      "border": "#525252",
+      "muted": "#8d8d8d",
+      "subtle": "#c6c6c6",
+      "light": "#f4f4f4"
+    }
+  }
+}

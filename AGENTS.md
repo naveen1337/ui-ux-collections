@@ -12,16 +12,19 @@ This repo is a **reference library**, not a standalone application. Agents shoul
 
 ## Stack Map
 
+Components are organized by **category first, then framework**: `components/<category>/<framework>/` (e.g. `components/metric-cards/react/`). Categories include `icons/`, `metric-cards/`, `nav-bars/`, `side-bars/`, `top-bars/`, and `maps/`.
+
 | Framework | Location | Use When |
 | --- | --- | --- |
-| React (CSR) | `components/react/` | Client-side rendered React apps |
-| Jinja | `components/jinja/` | Server-side rendered apps |
-| Alpine.js | `components/alpine/` | Non-React lightweight interactivity |
-| React Native | `components/react-native/` | Mobile apps |
+| React (CSR) | `components/<category>/react/` | Client-side rendered React apps |
+| Jinja | `components/<category>/jinja/` | Server-side rendered apps |
+| Alpine.js | `components/<category>/alpine/` | Non-React lightweight interactivity |
+| React Native | `components/<category>/react-native/` | Mobile apps |
 | Tailwind | `styles/tailwind/` | All CSS styling (all frameworks) |
 | Apache ECharts | `charts/echarts/` | All charts and data visualization |
 | Manifest | `manifest.json` | Component/theme index — read this first |
 | MCP Server | `mcp/` | Serves collection + theme config to agents |
+| Example Apps | `python-app/`, `react-app/`, `react-native/` | Sample apps wired to consume the collection |
 
 ## Core Rules
 
@@ -47,7 +50,7 @@ This repo is a **reference library**, not a standalone application. Agents shoul
 {
   "name": "...",
   "framework": "react | jinja | alpine | react-native",
-  "path": "components/<framework>/...",
+  "path": "components/<category>/<framework>/...",
   "variants": ["default", "..."],
   "tokens": ["color.primary", "..."],
   "dependencies": ["..."]

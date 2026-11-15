@@ -25,20 +25,31 @@ A living collection of reusable UI components and design patterns covering the m
 
 ## Repository Structure
 
+Components are organized by **category first, then framework** — e.g. `components/metric-cards/react/`.
+
 ```
 ├── README.md
 ├── AGENTS.md              # Instructions for coding agents
 ├── manifest.json          # Component/theme index (JSON manifest)
-├── components/
-│   ├── react/             # React (CSR) components
-│   ├── jinja/             # Jinja templates (SSR)
-│   ├── alpine/            # Alpine.js components
-│   └── react-native/      # React Native components
-├── styles/
-│   └── tailwind/          # Tailwind config, presets, plugin/theme tokens
-├── charts/
-│   └── echarts/           # ECharts option presets & wrappers
-└── mcp/                   # MCP server implementation
+├── components/            # Components by category, then framework
+│   ├── icons/
+│   │   └── react/         # React (CSR) icons
+│   ├── metric-cards/
+│   │   ├── react/         # React (CSR) metric cards
+│   │   ├── jinja/         # Jinja templates (SSR)
+│   │   └── react-native/  # React Native metric cards
+│   ├── nav-bars/          # Navigation bars (all frameworks)
+│   ├── side-bars/         # Side bars (all frameworks)
+│   ├── top-bars/          # Top bars (all frameworks)
+│   └── maps/              # Maps (all frameworks)
+├── styles/                # Tailwind config, presets, theme tokens
+│   └── tailwind/
+├── charts/                # ECharts option presets & wrappers
+│   └── echarts/
+├── mcp/                   # MCP server implementation
+├── python-app/            # Example Python (Jinja/SSR) app
+├── react-app/             # Example React (CSR) app
+└── react-native/          # Example React Native app
 ```
 
 ## Using This Collection

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "react": ["./react-app/node_modules/@types/react"],
+      "react/jsx-runtime": ["./react-app/node_modules/@types/react/jsx-runtime"],
+      "react-dom": ["./react-app/node_modules/@types/react-dom"]
+    }
+  },
+  "include": ["components/**/*"]
+}
