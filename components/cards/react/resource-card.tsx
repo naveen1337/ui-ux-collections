@@ -72,7 +72,7 @@ export function ResourceUsageBar({
       aria-valuenow={pct}
       aria-valuemin={0}
       aria-valuemax={100}
-      className={`h-3 w-full overflow-hidden ${track} ${className}`}
+      className={`h-5 w-full overflow-hidden ${track} ${className}`}
     >
       <div
         className={`h-full ${accentBar[accent]}`}
