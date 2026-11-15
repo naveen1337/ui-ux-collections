@@ -1,8 +1,5 @@
-import {
-  MetricCard,
-  MetricCardGrid,
-  type MetricCardAccent,
-} from "../components/metric-card";
+import type { MetricCardAccent } from "../../../components/metric-cards/react/metric-card";
+import { AppMetricCard } from "../components/app_metric-card";
 
 interface MetricData {
   title: string;
@@ -130,31 +127,32 @@ function Section({ label, metrics }: { label: string; metrics: MetricData[] }) {
       <h2 className="text-xs font-semibold tracking-widest text-muted uppercase">
         {label}
       </h2>
-      <MetricCardGrid>
+      <div className="flex flex-wrap gap-3">
         {metrics.map((m) => (
-          <MetricCard
-            key={m.title}
-            title={m.title}
-            value={m.value}
-            unit={m.unit}
-            change={m.change}
-            trend={m.trend}
-            caption={m.caption}
-            alert={m.alert}
-            menuItems={m.menuItems}
-            accent={m.accent}
-            theme={m.theme}
-            onClick={m.onClick}
-          />
+          <div key={m.title} className="w-[25vw]">
+            <AppMetricCard
+              title={m.title}
+              value={m.value}
+              unit={m.unit}
+              change={m.change}
+              trend={m.trend}
+              caption={m.caption}
+              alert={m.alert}
+              menuItems={m.menuItems}
+              accent={m.accent}
+              theme={m.theme}
+              onClick={m.onClick}
+            />
+          </div>
         ))}
-      </MetricCardGrid>
+      </div>
     </section>
   );
 }
 
 export function Metrics() {
   return (
-    <main className="flex min-h-screen flex-col gap-10 bg-bg p-10 text-light">
+    <main className="flex flex-col gap-10 p-10">
       <header className="flex flex-col gap-1">
         <p className="text-sm text-muted">Home /</p>
         <h1 className="text-4xl font-light">Metrics</h1>

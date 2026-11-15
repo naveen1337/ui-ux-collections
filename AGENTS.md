@@ -26,6 +26,15 @@ Components are organized by **category first, then framework**: `components/<cat
 | MCP Server | `mcp/` | Serves collection + theme config to agents |
 | Example Apps | `python-app/`, `react-app/`, `react-native/` | Sample apps wired to consume the collection |
 
+## Apps Are Shells — No Duplicates
+
+The example apps (`react-app/`, `python-app/`, `react-native/`) are **thin shells**. They must NOT contain their own copies of components.
+
+1. Import (or reference) components from the collection source: `components/<category>/<framework>/`.
+2. Never duplicate a component into an app's `src/components/` (or equivalent) directory. If an app needs different behavior, extend the collection component with props/callbacks here first, then wire those props from the app.
+3. App-level code is limited to: pages, routing, layout, and passing props/handlers to collection components.
+4. The only components an app may define are named `app_<component_name>` (e.g. `app_metric-card.tsx` → `AppMetricCard`), one per collection component. Each exists solely to render its collection counterpart (`components/<category>/<framework>/<component_name>`) — no extra markup, styling, or logic of its own. Pages and layouts consume the collection only through these `app_*` components.
+
 ## Core Rules
 
 1. **Read `manifest.json` before creating anything.** Always check whether a component, pattern, or token already exists. Prefer reuse over reinvention.

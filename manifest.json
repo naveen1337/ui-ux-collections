@@ -5,7 +5,17 @@
       "name": "metric-card",
       "framework": "react",
       "path": "components/metric-cards/react/metric-card.tsx",
-      "variants": ["default", "unit", "trend", "caption", "alert", "menu", "accent", "light-theme", "interactive"],
+      "variants": [
+        "default",
+        "unit",
+        "trend",
+        "caption",
+        "alert",
+        "menu",
+        "accent",
+        "light-theme",
+        "interactive"
+      ],
       "tokens": [
         "color.primary",
         "color.secondary",
@@ -13,13 +23,20 @@
         "color.warning",
         "color.error"
       ],
-      "dependencies": ["icons/react/warning-icon", "icons/react/kebab-icon", "icons/react/arrow-up-icon", "icons/react/arrow-down-icon"]
+      "dependencies": [
+        "icons/react/warning-icon",
+        "icons/react/kebab-icon",
+        "icons/react/arrow-up-icon",
+        "icons/react/arrow-down-icon"
+      ]
     },
     {
       "name": "warning-icon",
       "framework": "react",
       "path": "components/icons/react/warning-icon.tsx",
-      "variants": ["default"],
+      "variants": [
+        "default"
+      ],
       "tokens": [],
       "dependencies": []
     },
@@ -27,7 +44,9 @@
       "name": "kebab-icon",
       "framework": "react",
       "path": "components/icons/react/kebab-icon.tsx",
-      "variants": ["default"],
+      "variants": [
+        "default"
+      ],
       "tokens": [],
       "dependencies": []
     },
@@ -35,7 +54,9 @@
       "name": "arrow-up-icon",
       "framework": "react",
       "path": "components/icons/react/arrow-up-icon.tsx",
-      "variants": ["default"],
+      "variants": [
+        "default"
+      ],
       "tokens": [],
       "dependencies": []
     },
@@ -43,9 +64,129 @@
       "name": "arrow-down-icon",
       "framework": "react",
       "path": "components/icons/react/arrow-down-icon.tsx",
-      "variants": ["default"],
+      "variants": [
+        "default"
+      ],
       "tokens": [],
       "dependencies": []
+    },
+    {
+      "name": "menu-icon",
+      "framework": "react",
+      "path": "components/icons/react/menu-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "chevron-down-icon",
+      "framework": "react",
+      "path": "components/icons/react/chevron-down-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "bell-icon",
+      "framework": "react",
+      "path": "components/icons/react/bell-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "brighten-icon",
+      "framework": "react",
+      "path": "components/icons/react/brighten-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "help-icon",
+      "framework": "react",
+      "path": "components/icons/react/help-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "multi-select",
+      "framework": "react",
+      "path": "components/multi-select/react/multi-select.tsx",
+      "variants": [
+        "default",
+        "sm",
+        "disabled",
+        "invalid"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.error",
+        "color.bg",
+        "color.surface",
+        "color.surface-hover",
+        "color.border",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "date-picker",
+      "framework": "react",
+      "path": "components/date-picker/react/date-picker.tsx",
+      "variants": [
+        "default",
+        "bounded"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.bg",
+        "color.surface",
+        "color.surface-hover",
+        "color.border",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "navbar",
+      "framework": "react",
+      "path": "components/nav-bars/react/navbar.tsx",
+      "variants": [
+        "default",
+        "light-theme"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.bg",
+        "color.surface",
+        "color.surface-hover",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light",
+        "color.error"
+      ],
+      "dependencies": [
+        "icons/react/menu-icon",
+        "icons/react/chevron-down-icon",
+        "icons/react/bell-icon",
+        "icons/react/brighten-icon",
+        "icons/react/help-icon"
+      ]
     }
   ],
   "tokens": {
