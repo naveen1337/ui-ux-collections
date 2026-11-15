@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Metrics } from "./pages/Metrics";
 import { NavbarPage } from "./pages/Navbar";
 import { MultiSelectPage } from "./pages/MultiSelect";
+import { SingleSelectPage } from "./pages/SingleSelect";
 import { DateRangePickerPage } from "./pages/DateRangePicker";
 import { SingleDatePickerPage } from "./pages/SingleDatePicker";
 import { ButtonsPage } from "./pages/Buttons";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/metrics" element={<Metrics />} />
           <Route path="/navbar" element={<NavbarPage />} />
           <Route path="/multi-select" element={<MultiSelectPage />} />
+          <Route path="/single-select" element={<SingleSelectPage />} />
           <Route path="/date-range-picker" element={<DateRangePickerPage />} />
           <Route path="/single-date-picker" element={<SingleDatePickerPage />} />
           <Route path="/buttons" element={<ButtonsPage />} />

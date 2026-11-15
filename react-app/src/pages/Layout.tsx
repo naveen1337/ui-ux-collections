@@ -4,7 +4,7 @@ import { AppNavbar } from "../components/app_navbar";
 const menus = [
   {
     label: "Components",
-    items: ["Metric Card", "Navbar", "Multi Select", "Date Range Picker", "Single Date Picker", "Button", "Input"],
+    items: ["Metric Card", "Navbar", "Multi Select", "Single Select", "Date Range Picker", "Single Date Picker", "Button", "Input"],
   },
 ];
 
@@ -12,6 +12,7 @@ const menuRoutes: Record<string, string> = {
   "Metric Card": "/metrics",
   Navbar: "/navbar",
   "Multi Select": "/multi-select",
+  "Single Select": "/single-select",
   "Date Range Picker": "/date-range-picker",
   "Single Date Picker": "/single-date-picker",
   Button: "/buttons",

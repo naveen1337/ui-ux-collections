@@ -17,6 +17,11 @@ const components = [
     href: "/multi-select",
   },
   {
+    name: "Single Select",
+    description: "Carbon-style dropdown with default, warning, invalid, disabled and read-only states.",
+    href: "/single-select",
+  },
+  {
     name: "Date Range Picker",
     description: "Date range picker with presets and calendar selection.",
     href: "/date-range-picker",
