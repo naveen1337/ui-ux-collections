@@ -193,6 +193,22 @@
       "dependencies": []
     },
     {
+      "name": "form-progress",
+      "framework": "react",
+      "path": "components/form-progress/react/form-progress.tsx",
+      "variants": [
+        "default",
+        "interactive"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.border",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": []
+    },
+    {
       "name": "navbar",
       "framework": "react",
       "path": "components/nav-bars/react/navbar.tsx",

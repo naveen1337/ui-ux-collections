@@ -26,6 +26,11 @@ const components = [
     description: "Carbon-style buttons: primary, secondary, tertiary, ghost, danger and icon-only.",
     href: "/buttons",
   },
+  {
+    name: "Form Progress",
+    description: "Horizontal multi-step form progress with completed, current and upcoming states.",
+    href: "/form-progress",
+  },
 ];
 
 export function Home() {
