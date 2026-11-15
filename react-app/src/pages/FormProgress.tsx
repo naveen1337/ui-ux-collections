@@ -4,7 +4,7 @@ import type { FormProgressStep } from "../../../components/form-progress/react/f
 import { AppButton } from "../components/app_button";
 
 const steps: FormProgressStep[] = [
-  { id: "account", label: "Account & Address Info" },
+  { id: "account", label: "Account & Address Info" ,description: "Lorem insum text, Lorem insum text Lorem insum text Lorem insum text"},
   { id: "profile", label: "KYC Verification" },
   { id: "preferences", label: "Preview details", description: "Optional" },
   { id: "review", label: "Terms of condtions" },

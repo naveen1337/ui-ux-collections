@@ -7,6 +7,7 @@ import { MultiSelectPage } from "./pages/MultiSelect";
 import { DatePickerPage } from "./pages/DatePicker";
 import { ButtonsPage } from "./pages/Buttons";
 import { FormProgressPage } from "./pages/FormProgress";
+import { InputsPage } from "./pages/Inputs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/date-picker" element={<DatePickerPage />} />
           <Route path="/buttons" element={<ButtonsPage />} />
           <Route path="/form-progress" element={<FormProgressPage />} />
+          <Route path="/inputs" element={<InputsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

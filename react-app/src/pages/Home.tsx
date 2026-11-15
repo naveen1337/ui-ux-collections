@@ -31,6 +31,11 @@ const components = [
     description: "Horizontal multi-step form progress with completed, current and upcoming states.",
     href: "/form-progress",
   },
+  {
+    name: "Input",
+    description: "Carbon-style text inputs across sizes with icon, disabled, error and success states.",
+    href: "/inputs",
+  },
 ];
 
 export function Home() {
