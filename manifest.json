@@ -193,9 +193,9 @@
       "dependencies": []
     },
     {
-      "name": "date-picker",
+      "name": "date-range-picker",
       "framework": "react",
-      "path": "components/date-picker/react/date-picker.tsx",
+      "path": "components/date-picker/react/date-range-picker.tsx",
       "variants": [
         "default",
         "bounded"

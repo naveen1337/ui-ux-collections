@@ -17,9 +17,9 @@ const components = [
     href: "/multi-select",
   },
   {
-    name: "Date Picker",
+    name: "Date Range Picker",
     description: "Date range picker with presets and calendar selection.",
-    href: "/date-picker",
+    href: "/date-range-picker",
   },
   {
     name: "Single Date Picker",

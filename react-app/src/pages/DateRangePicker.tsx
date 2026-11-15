@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { AppDateRangePicker } from "../components/app_date-picker";
-import type { DateRange } from "../../../components/date-picker/react/date-picker";
+import { AppDateRangePicker } from "../components/app_date-range-picker";
+import type { DateRange } from "../../../components/date-picker/react/date-range-picker";
 
 const today = new Date();
 const maxDate = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
 const minDate = `${today.getFullYear() - 2}-01-01`;
 
-export function DatePickerPage() {
+export function DateRangePickerPage() {
   const [range, setRange] = useState<DateRange>({ start: "", end: "" });
   const [clampedRange, setClampedRange] = useState<DateRange>({ start: "", end: "" });
 
@@ -14,7 +14,7 @@ export function DatePickerPage() {
     <main className="flex flex-col gap-10 p-8">
       <section className="flex flex-col gap-1">
         <p className="text-sm text-muted">Home /</p>
-        <h1 className="text-4xl font-light">Date Picker</h1>
+        <h1 className="text-4xl font-light">Date Range Picker</h1>
         <p className="text-sm text-muted">
           Date range picker variations. Manual date entry, presets, and a
           two-month calendar with range selection.
