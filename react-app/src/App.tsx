@@ -17,6 +17,7 @@ import { TogglePage } from "./pages/Toggle";
 import { NodeSidebarPage } from "./pages/NodeSidebar";
 import { Cards } from "./pages/Cards";
 import { AccordionPage } from "./pages/Accordion";
+import { MenuPage } from "./pages/Menu";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/toggle" element={<TogglePage />} />
           <Route path="/node-sidebar" element={<NodeSidebarPage />} />
           <Route path="/accordion" element={<AccordionPage />} />
+          <Route path="/menu" element={<MenuPage />} />
           <Route path="/cards" element={<Cards />} />
         </Route>
       </Routes>

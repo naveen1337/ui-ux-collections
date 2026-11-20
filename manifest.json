@@ -557,6 +557,31 @@
       "dependencies": [
         "icons/react/chevron-down-icon"
       ]
+    },
+    {
+      "name": "menu",
+      "framework": "react",
+      "path": "components/menus/react/menu.tsx",
+      "variants": [
+        "default",
+        "submenu",
+        "checkable",
+        "danger",
+        "disabled",
+        "divider"
+      ],
+      "tokens": [
+        "color.menu",
+        "color.surface-hover",
+        "color.border",
+        "color.light",
+        "color.muted",
+        "color.error",
+        "color.primary"
+      ],
+      "dependencies": [
+        "@popperjs/core"
+      ]
     }
   ],
   "tokens": {

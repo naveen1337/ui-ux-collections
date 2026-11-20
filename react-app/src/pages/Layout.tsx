@@ -15,12 +15,14 @@ import {
 } from "../../../components/icons/react/node-icons";
 import { ChevronDownIcon } from "../../../components/icons/react/chevron-down-icon";
 import { PanelIcon } from "../../../components/icons/react/panel-icon";
+import { KebabIcon } from "../../../components/icons/react/kebab-icon";
 
 const menus = [
     {
       label: "Components",
       items: [
         "Accordion",
+        "Menu",
         "Metric Card",
         "Navbar",
         "Multi Select",
@@ -77,6 +79,7 @@ const sidebarCategories: NodeCategory[] = [
         icon: <CalendarIcon className="h-4 w-4" />,
       },
       { id: "accordion", label: "Accordion", icon: <ChevronDownIcon className="h-4 w-4" />, recent: true },
+      { id: "menu", label: "Menu", icon: <KebabIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "form-progress", label: "Form Progress", icon: <FilePlusIcon className="h-4 w-4" /> },
     ],
   },
@@ -105,6 +108,7 @@ const sidebarCategories: NodeCategory[] = [
 
 const menuRoutes: Record<string, string> = {
   Accordion: "/accordion",
+  Menu: "/menu",
   "Metric Card": "/metrics",
   Navbar: "/navbar",
   "Multi Select": "/multi-select",
@@ -135,6 +139,7 @@ const nodeRoutes: Record<string, string> = {
   "date-range-picker": "/date-range-picker",
   "single-date-picker": "/single-date-picker",
   accordion: "/accordion",
+  menu: "/menu",
   "form-progress": "/form-progress",
   "metric-card": "/metrics",
   "resource-card": "/cards",

@@ -12,6 +12,11 @@ const components = [
     href: "/metrics",
   },
   {
+    name: "Menu",
+    description: "Carbon-style menu with nested submenus, checkable items and Popper positioning.",
+    href: "/menu",
+  },
+  {
     name: "Navbar",
     description: "Top navigation bar with menu, search and actions.",
     href: "/navbar",
