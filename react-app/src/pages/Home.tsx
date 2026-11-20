@@ -46,6 +46,11 @@ const components = [
     description: "Carbon-style text inputs across sizes with icon, disabled, error and success states.",
     href: "/inputs",
   },
+  {
+    name: "Text Area",
+    description: "Carbon-style text areas across sizes with disabled, error and success states.",
+    href: "/text-areas",
+  },
 ];
 
 export function Home() {

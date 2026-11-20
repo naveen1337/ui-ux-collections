@@ -341,14 +341,14 @@ export function NodeSidebar({
                     const faved = favIds.has(item.id);
                     const selected = selectedId === item.id;
                     return (
-                      <li key={item.id}>
+                      <li key={item.id} className="group relative">
                         <button
                           type="button"
                           onClick={() => {
                             setSelectedId(item.id);
                             onNodeSelect?.(item);
                           }}
-                          className={`group flex w-full items-center ${d.row} text-left transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary focus-visible:outline-none ${
+                          className={`flex w-full items-center ${d.row} pr-10 text-left transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary focus-visible:outline-none ${
                             selected ? t.selected : t.hover
                           }`}
                         >
@@ -367,22 +367,20 @@ export function NodeSidebar({
                               ))}
                             </span>
                           )}
-                          <span className="ml-auto flex w-6 shrink-0 justify-end">
-                            <button
-                              type="button"
-                              aria-label={faved ? "Remove favourite" : "Add favourite"}
-                              aria-pressed={faved}
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                toggleFav(item.id);
-                              }}
-                              className={`grid h-6 w-6 place-items-center rounded-sm text-primary transition-opacity focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none ${
-                                faved ? "opacity-100" : "opacity-0 group-hover:opacity-100"
-                              }`}
-                            >
-                              <StarIcon filled={faved} className="h-4 w-4" />
-                            </button>
-                          </span>
+                        </button>
+                        <button
+                          type="button"
+                          aria-label={faved ? "Remove favourite" : "Add favourite"}
+                          aria-pressed={faved}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleFav(item.id);
+                          }}
+                          className={`absolute right-2 top-1/2 grid h-6 w-6 -translate-y-1/2 place-items-center rounded-sm text-primary transition-opacity focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none ${
+                            faved ? "opacity-100" : "opacity-0 group-hover:opacity-100 group-focus-within:opacity-100"
+                          }`}
+                        >
+                          <StarIcon filled={faved} className="h-4 w-4" />
                         </button>
                       </li>
                     );

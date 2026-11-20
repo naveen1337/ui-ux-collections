@@ -42,9 +42,8 @@ The example apps (`react-app/`, `python-app/`, `react-native/`) are **thin shell
 3. **Tailwind only for styling.** Do not write custom CSS, CSS-in-JS, or inline styles. Use existing Tailwind classes and theme tokens from `styles/tailwind/`. If a new token is needed, add it to the Tailwind config, not inline.
 4. **Charts use Apache ECharts.** Never introduce other chart libraries. Reuse option presets in `charts/echarts/` and only override what's necessary.
 5. **No design drift.** Copy components as-is when reusing them; do not silently alter spacing, colors, radii, or typography. If a design change is needed, update the component here first, then propagate.
-6. **Register everything.** Any new or modified component must be reflected in `manifest.json`.
-7. **Theme generation flows through the MCP server.** When asked to produce a theme config for a project, query the manifest/MCP server for tokens rather than guessing values.
-8. **React Native uses `StyleSheet` only.** The `react-native/` example app is a shell application: never use Tailwind (or any web CSS) in React Native code. All styling must use React Native's built-in `StyleSheet` API. Additionally, React Native components are designed for **mobile resolutions only** — do not add tablet/desktop breakpoints, responsive web layouts, or wide-screen variants.
+6. **Register everything.** Any new or modified component must be reflected in `manifest.js`. If it's a react-app it shoule be Add in Home and Sidebar.
+7. **React Native uses `StyleSheet` only.** The `react-native/` example app is a shell application: never use Tailwind (or any web CSS) in React Native code. All styling must use React Native's built-in `StyleSheet` API. Additionally, React Native components are designed for **mobile resolutions only** — do not add tablet/desktop breakpoints, responsive web layouts, or wide-screen variants.
 
 ## Component Conventions
 

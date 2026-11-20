@@ -10,6 +10,7 @@ import { SingleDatePickerPage } from "./pages/SingleDatePicker";
 import { ButtonsPage } from "./pages/Buttons";
 import { FormProgressPage } from "./pages/FormProgress";
 import { InputsPage } from "./pages/Inputs";
+import { TextAreasPage } from "./pages/TextAreas";
 import { NodeSidebarPage } from "./pages/NodeSidebar";
 import { Cards } from "./pages/Cards";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/buttons" element={<ButtonsPage />} />
           <Route path="/form-progress" element={<FormProgressPage />} />
           <Route path="/inputs" element={<InputsPage />} />
+          <Route path="/text-areas" element={<TextAreasPage />} />
           <Route path="/node-sidebar" element={<NodeSidebarPage />} />
           <Route path="/cards" element={<Cards />} />
         </Route>

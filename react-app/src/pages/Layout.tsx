@@ -27,6 +27,7 @@ const menus = [
         "Single Date Picker",
         "Button",
         "Input",
+        "Text Area",
         "Node Sidebar",
         "Resource Card",
       ],
@@ -54,6 +55,7 @@ const sidebarCategories: NodeCategory[] = [
     label: "Forms",
     items: [
       { id: "input", label: "Input", icon: <PenIcon className="h-4 w-4" /> },
+      { id: "text-area", label: "Text Area", icon: <PenIcon className="h-4 w-4" /> },
       { id: "single-select", label: "Single Select", icon: <TargetIcon className="h-4 w-4" /> },
       { id: "multi-select", label: "Multi Select", icon: <FilterIcon className="h-4 w-4" /> },
       {
@@ -101,6 +103,7 @@ const menuRoutes: Record<string, string> = {
   "Single Date Picker": "/single-date-picker",
   Button: "/buttons",
   Input: "/inputs",
+  "Text Area": "/text-areas",
   "Node Sidebar": "/node-sidebar",
   "Resource Card": "/cards",
 };
@@ -110,6 +113,7 @@ const nodeRoutes: Record<string, string> = {
   button: "/buttons",
   "node-sidebar": "/node-sidebar",
   input: "/inputs",
+  "text-area": "/text-areas",
   "single-select": "/single-select",
   "multi-select": "/multi-select",
   "date-range-picker": "/date-range-picker",

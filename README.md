@@ -78,6 +78,12 @@ Legend: `[x]` done · `[ ]` to build
   - [ ] Jinja2 Template
   - [ ] React Native
 
+- **Text Area**
+
+  - [x] React (IBM) — `components/inputs/react/`
+  - [ ] Jinja2 Template
+  - [ ] React Native
+
 - **Single Select**
 
   - [x] React (IBM) — `components/single-select/react/`
@@ -144,7 +150,7 @@ Forms & Inputs
 
 - **Textarea**
 
-  - [ ] React (IBM)
+  - [*] React (IBM)
   - [ ] Jinja2 Template
   - [ ] React Native
 
