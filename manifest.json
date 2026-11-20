@@ -582,6 +582,55 @@
       "dependencies": [
         "@popperjs/core"
       ]
+    },
+    {
+      "name": "tag",
+      "framework": "react",
+      "path": "components/tags/react/tag.tsx",
+      "variants": [
+        "read-only",
+        "dismissible",
+        "selectable",
+        "operational",
+        "sm",
+        "md",
+        "lg",
+        "gray",
+        "blue",
+        "purple",
+        "green",
+        "yellow",
+        "red",
+        "cyan",
+        "disabled",
+        "skeleton"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.secondary",
+        "color.success",
+        "color.warning",
+        "color.error",
+        "color.info",
+        "color.bg",
+        "color.surface-hover",
+        "color.border",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": [
+        "icons/react/close-icon"
+      ]
+    },
+    {
+      "name": "close-icon",
+      "framework": "react",
+      "path": "components/icons/react/close-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
     }
   ],
   "tokens": {

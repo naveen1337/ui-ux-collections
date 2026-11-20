@@ -18,6 +18,7 @@ import { NodeSidebarPage } from "./pages/NodeSidebar";
 import { Cards } from "./pages/Cards";
 import { AccordionPage } from "./pages/Accordion";
 import { MenuPage } from "./pages/Menu";
+import { TagPage } from "./pages/Tag";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/node-sidebar" element={<NodeSidebarPage />} />
           <Route path="/accordion" element={<AccordionPage />} />
           <Route path="/menu" element={<MenuPage />} />
+          <Route path="/tag" element={<TagPage />} />
           <Route path="/cards" element={<Cards />} />
         </Route>
       </Routes>

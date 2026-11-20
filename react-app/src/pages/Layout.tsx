@@ -35,6 +35,7 @@ const menus = [
         "Checkbox",
         "Radio Group",
         "Toggle",
+        "Tag",
         "Node Sidebar",
         "Resource Card",
       ],
@@ -66,6 +67,7 @@ const sidebarCategories: NodeCategory[] = [
       { id: "checkbox", label: "Checkbox", icon: <TargetIcon className="h-4 w-4" /> },
       { id: "radio-group", label: "Radio Group", icon: <TargetIcon className="h-4 w-4" /> },
       { id: "toggle", label: "Toggle", icon: <TriggerIcon className="h-4 w-4" /> },
+      { id: "tag", label: "Tag", icon: <FilterIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "single-select", label: "Single Select", icon: <TargetIcon className="h-4 w-4" /> },
       { id: "multi-select", label: "Multi Select", icon: <FilterIcon className="h-4 w-4" /> },
       {
@@ -121,6 +123,7 @@ const menuRoutes: Record<string, string> = {
   "Checkbox": "/checkbox",
   "Radio Group": "/radio-group",
   "Toggle": "/toggle",
+  "Tag": "/tag",
   "Node Sidebar": "/node-sidebar",
   "Resource Card": "/cards",
 };
@@ -134,6 +137,7 @@ const nodeRoutes: Record<string, string> = {
   checkbox: "/checkbox",
   "radio-group": "/radio-group",
   toggle: "/toggle",
+  tag: "/tag",
   "single-select": "/single-select",
   "multi-select": "/multi-select",
   "date-range-picker": "/date-range-picker",

@@ -76,6 +76,11 @@ const components = [
     description: "Carbon-style toggles for binary on/off settings with size and disabled states.",
     href: "/toggle",
   },
+  {
+    name: "Tag",
+    description: "Carbon-style tags: read-only, dismissible, selectable and operational, in three sizes.",
+    href: "/tag",
+  },
 ];
 
 export function Home() {
