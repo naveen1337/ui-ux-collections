@@ -129,7 +129,7 @@ function Section({ label, metrics }: { label: string; metrics: MetricData[] }) {
       </h2>
       <div className="flex flex-wrap gap-3">
         {metrics.map((m) => (
-          <div key={m.title} className="w-[25vw]">
+          <div key={m.title} className="w-[15vw]">
             <AppMetricCard
               title={m.title}
               value={m.value}

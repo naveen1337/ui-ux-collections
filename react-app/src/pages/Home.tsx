@@ -81,6 +81,11 @@ const components = [
     description: "Carbon-style tags: read-only, dismissible, selectable and operational, in three sizes.",
     href: "/tag",
   },
+  {
+    name: "Tree View",
+    description: "Carbon-style hierarchical tree with expandable branches, leaf nodes, selection and keyboard navigation.",
+    href: "/tree-view",
+  },
 ];
 
 export function Home() {

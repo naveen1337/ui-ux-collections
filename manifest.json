@@ -631,6 +631,28 @@
       ],
       "tokens": [],
       "dependencies": []
+    },
+    {
+      "name": "tree-view",
+      "framework": "react",
+      "path": "components/tree-view/react/tree-view.tsx",
+      "variants": [
+        "sm",
+        "xs",
+        "selected",
+        "expanded",
+        "with-icons"
+      ],
+      "tokens": [
+        "color.surface",
+        "color.surface-hover",
+        "color.light",
+        "color.muted",
+        "color.primary"
+      ],
+      "dependencies": [
+        "icons/react/chevron-down-icon"
+      ]
     }
   ],
   "tokens": {

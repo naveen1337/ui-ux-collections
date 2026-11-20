@@ -36,6 +36,7 @@ const menus = [
         "Radio Group",
         "Toggle",
         "Tag",
+        "Tree View",
         "Node Sidebar",
         "Resource Card",
       ],
@@ -82,6 +83,7 @@ const sidebarCategories: NodeCategory[] = [
       },
       { id: "accordion", label: "Accordion", icon: <ChevronDownIcon className="h-4 w-4" />, recent: true },
       { id: "menu", label: "Menu", icon: <KebabIcon className="h-4 w-4" />, tags: ["new"], recent: true },
+      { id: "tree-view", label: "Tree View", icon: <FileSearchIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "form-progress", label: "Form Progress", icon: <FilePlusIcon className="h-4 w-4" /> },
     ],
   },
@@ -124,6 +126,7 @@ const menuRoutes: Record<string, string> = {
   "Radio Group": "/radio-group",
   "Toggle": "/toggle",
   "Tag": "/tag",
+  "Tree View": "/tree-view",
   "Node Sidebar": "/node-sidebar",
   "Resource Card": "/cards",
 };
@@ -145,6 +148,7 @@ const nodeRoutes: Record<string, string> = {
   accordion: "/accordion",
   menu: "/menu",
   "form-progress": "/form-progress",
+  "tree-view": "/tree-view",
   "metric-card": "/metrics",
   "resource-card": "/cards",
 };
