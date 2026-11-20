@@ -16,21 +16,21 @@ import {
 import { PanelIcon } from "../../../components/icons/react/panel-icon";
 
 const menus = [
-  {
-    label: "Components",
-    items: [
-      "Metric Card",
-      "Navbar",
-      "Multi Select",
-      "Single Select",
-      "Date Range Picker",
-      "Single Date Picker",
-      "Button",
-      "Input",
-      "Node Sidebar",
-      "Resource Card",
-    ],
-  },
+    {
+      label: "Components",
+      items: [
+        "Metric Card",
+        "Navbar",
+        "Multi Select",
+        "Single Select",
+        "Date Range Picker",
+        "Single Date Picker",
+        "Button",
+        "Input",
+        "Node Sidebar",
+        "Resource Card",
+      ],
+    },
 ];
 
 const sidebarCategories: NodeCategory[] = [

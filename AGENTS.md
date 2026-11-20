@@ -44,6 +44,7 @@ The example apps (`react-app/`, `python-app/`, `react-native/`) are **thin shell
 5. **No design drift.** Copy components as-is when reusing them; do not silently alter spacing, colors, radii, or typography. If a design change is needed, update the component here first, then propagate.
 6. **Register everything.** Any new or modified component must be reflected in `manifest.json`.
 7. **Theme generation flows through the MCP server.** When asked to produce a theme config for a project, query the manifest/MCP server for tokens rather than guessing values.
+8. **React Native uses `StyleSheet` only.** The `react-native/` example app is a shell application: never use Tailwind (or any web CSS) in React Native code. All styling must use React Native's built-in `StyleSheet` API. Additionally, React Native components are designed for **mobile resolutions only** — do not add tablet/desktop breakpoints, responsive web layouts, or wide-screen variants.
 
 ## Component Conventions
 

@@ -8,6 +8,7 @@ export interface FormProgressProps {
   steps: FormProgressStep[];
   current: number;
   onChange?: (index: number) => void;
+  orientation?: "horizontal" | "vertical";
   className?: string;
 }
 
@@ -40,33 +41,51 @@ export function FormProgress({
   steps,
   current,
   onChange,
+  orientation = "horizontal",
   className,
 }: FormProgressProps) {
   const interactive = typeof onChange === "function";
+  const isVertical = orientation === "vertical";
 
   return (
-    <ol className={`flex w-full list-none ${className ?? ""}`}>
+    <ol
+      className={`flex w-full list-none ${isVertical ? "flex-col" : ""} ${className ?? ""}`}
+    >
       {steps.map((step, index) => {
         const complete = index < current;
         const isCurrent = index === current;
+        const isLast = index === steps.length - 1;
+
         return (
-          <li key={step.id} className="min-w-0 flex-1" aria-current={isCurrent ? "step" : undefined}>
-            <span
-              aria-hidden="true"
-              className={`block h-0.5 w-full ${index <= current ? "bg-primary" : "bg-border"}`}
-            />
+          <li
+            key={step.id}
+            className={isVertical ? "relative min-w-0 pb-6 last:pb-0" : "min-w-0 flex-1"}
+            aria-current={isCurrent ? "step" : undefined}
+          >
+            {!isVertical && (
+              <span
+                aria-hidden="true"
+                className={`block h-0.5 w-full ${index <= current ? "bg-primary" : "bg-border"}`}
+              />
+            )}
+            {isVertical && !isLast && (
+              <span
+                aria-hidden="true"
+                className={`absolute left-[7px] top-5 bottom-0 w-0.5 ${index < current ? "bg-primary" : "bg-border"}`}
+              />
+            )}
             <button
               type="button"
               disabled={!interactive}
               onClick={() => onChange?.(index)}
-              className={`flex items-start gap-2 pt-3 text-left ${interactive ? "cursor-pointer" : "cursor-default"}`}
+              className={`flex items-start gap-2 text-left ${isVertical ? "" : "pt-3"} ${interactive ? "cursor-pointer" : "cursor-default"}`}
             >
               {complete ? (
-                <CompleteIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <CompleteIcon className={`${isVertical ? "" : "mt-0.5"} h-4 w-4 shrink-0 text-primary`} />
               ) : isCurrent ? (
-                <CurrentIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <CurrentIcon className={`${isVertical ? "" : "mt-0.5"} h-4 w-4 shrink-0 text-primary`} />
               ) : (
-                <UpcomingIcon className="mt-0.5 h-4 w-4 shrink-0 text-border" />
+                <UpcomingIcon className={`${isVertical ? "" : "mt-0.5"} h-4 w-4 shrink-0 text-border`} />
               )}
               <span className="min-w-0">
                 <span
