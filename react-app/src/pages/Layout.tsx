@@ -13,12 +13,14 @@ import {
   LayoutIcon,
   FilePlusIcon,
 } from "../../../components/icons/react/node-icons";
+import { ChevronDownIcon } from "../../../components/icons/react/chevron-down-icon";
 import { PanelIcon } from "../../../components/icons/react/panel-icon";
 
 const menus = [
     {
       label: "Components",
       items: [
+        "Accordion",
         "Metric Card",
         "Navbar",
         "Multi Select",
@@ -74,6 +76,7 @@ const sidebarCategories: NodeCategory[] = [
         label: "Single Date Picker",
         icon: <CalendarIcon className="h-4 w-4" />,
       },
+      { id: "accordion", label: "Accordion", icon: <ChevronDownIcon className="h-4 w-4" />, recent: true },
       { id: "form-progress", label: "Form Progress", icon: <FilePlusIcon className="h-4 w-4" /> },
     ],
   },
@@ -101,6 +104,7 @@ const sidebarCategories: NodeCategory[] = [
 ];
 
 const menuRoutes: Record<string, string> = {
+  Accordion: "/accordion",
   "Metric Card": "/metrics",
   Navbar: "/navbar",
   "Multi Select": "/multi-select",
@@ -130,6 +134,7 @@ const nodeRoutes: Record<string, string> = {
   "multi-select": "/multi-select",
   "date-range-picker": "/date-range-picker",
   "single-date-picker": "/single-date-picker",
+  accordion: "/accordion",
   "form-progress": "/form-progress",
   "metric-card": "/metrics",
   "resource-card": "/cards",

@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 
 const components = [
   {
+    name: "Accordion",
+    description: "Carbon-style accordion for progressive disclosure with short/large content and icon variants.",
+    href: "/accordion",
+  },
+  {
     name: "Metric Card",
     description: "Metric cards with trends, alerts, accents and themes.",
     href: "/metrics",

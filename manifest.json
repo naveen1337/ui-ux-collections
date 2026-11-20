@@ -533,6 +533,30 @@
         "color.bg"
       ],
       "dependencies": []
+    },
+    {
+      "name": "accordion",
+      "framework": "react",
+      "path": "components/accordions/react/accordion.tsx",
+      "variants": [
+        "default",
+        "with-icon",
+        "sm",
+        "md",
+        "lg",
+        "align-end"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.border",
+        "color.surface-hover",
+        "color.light",
+        "color.subtle",
+        "color.muted"
+      ],
+      "dependencies": [
+        "icons/react/chevron-down-icon"
+      ]
     }
   ],
   "tokens": {
