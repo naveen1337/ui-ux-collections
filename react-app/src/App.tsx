@@ -11,6 +11,9 @@ import { ButtonsPage } from "./pages/Buttons";
 import { FormProgressPage } from "./pages/FormProgress";
 import { InputsPage } from "./pages/Inputs";
 import { TextAreasPage } from "./pages/TextAreas";
+import { CheckboxPage } from "./pages/Checkbox";
+import { RadioGroupPage } from "./pages/RadioGroup";
+import { TogglePage } from "./pages/Toggle";
 import { NodeSidebarPage } from "./pages/NodeSidebar";
 import { Cards } from "./pages/Cards";
 
@@ -30,6 +33,9 @@ function App() {
           <Route path="/form-progress" element={<FormProgressPage />} />
           <Route path="/inputs" element={<InputsPage />} />
           <Route path="/text-areas" element={<TextAreasPage />} />
+          <Route path="/checkbox" element={<CheckboxPage />} />
+          <Route path="/radio-group" element={<RadioGroupPage />} />
+          <Route path="/toggle" element={<TogglePage />} />
           <Route path="/node-sidebar" element={<NodeSidebarPage />} />
           <Route path="/cards" element={<Cards />} />
         </Route>

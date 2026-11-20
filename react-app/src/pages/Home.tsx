@@ -51,6 +51,21 @@ const components = [
     description: "Carbon-style text areas across sizes with disabled, error and success states.",
     href: "/text-areas",
   },
+  {
+    name: "Checkbox",
+    description: "Carbon-style checkboxes with checked, indeterminate, disabled, and invalid states.",
+    href: "/checkbox",
+  },
+  {
+    name: "Radio Group",
+    description: "Carbon-style radio groups for mutually exclusive selections in vertical or horizontal layouts.",
+    href: "/radio-group",
+  },
+  {
+    name: "Toggle",
+    description: "Carbon-style toggles for binary on/off settings with size and disabled states.",
+    href: "/toggle",
+  },
 ];
 
 export function Home() {

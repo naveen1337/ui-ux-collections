@@ -465,6 +465,74 @@
         "icons/react/chevron-down-icon",
         "icons/react/node-icons"
       ]
+    },
+    {
+      "name": "checkbox",
+      "framework": "react",
+      "path": "components/checkbox/react/checkbox.tsx",
+      "variants": [
+        "default",
+        "checked",
+        "indeterminate",
+        "disabled",
+        "invalid"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.error",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light",
+        "color.bg"
+      ],
+      "dependencies": [
+        "icons/react/warning-icon"
+      ]
+    },
+    {
+      "name": "radio-group",
+      "framework": "react",
+      "path": "components/radio-group/react/radio-group.tsx",
+      "variants": [
+        "vertical",
+        "horizontal",
+        "disabled",
+        "invalid"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.error",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light",
+        "color.bg"
+      ],
+      "dependencies": [
+        "icons/react/warning-icon"
+      ]
+    },
+    {
+      "name": "toggle",
+      "framework": "react",
+      "path": "components/toggle/react/toggle.tsx",
+      "variants": [
+        "sm",
+        "md",
+        "on",
+        "off",
+        "disabled"
+      ],
+      "tokens": [
+        "color.success",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light",
+        "color.bg"
+      ],
+      "dependencies": []
     }
   ],
   "tokens": {
