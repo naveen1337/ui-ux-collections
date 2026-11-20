@@ -47,7 +47,7 @@ const messageSizeClasses: Record<InputSize, string> = {
 const stateClasses = {
   default:
     "bg-surface border-border focus-within:border-primary hover:bg-surface-hover",
-  disabled: "bg-subtle border-subtle cursor-not-allowed",
+  disabled: "bg-disabled border-disabled cursor-not-allowed",
   invalid: "bg-surface border-error hover:bg-surface-hover",
   success: "bg-surface border-success hover:bg-surface-hover",
 } as const;

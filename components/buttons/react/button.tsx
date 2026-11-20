@@ -38,11 +38,11 @@ const kindClasses: Record<ButtonKind, string> = {
 };
 
 const disabledClasses: Record<ButtonKind, string> = {
-  primary: "disabled:bg-subtle disabled:text-muted",
-  secondary: "disabled:bg-subtle disabled:text-muted",
+  primary: "disabled:bg-disabled disabled:text-muted",
+  secondary: "disabled:bg-disabled disabled:text-muted",
   tertiary: "disabled:border-muted disabled:text-muted",
   ghost: "disabled:text-muted",
-  danger: "disabled:bg-subtle disabled:text-muted",
+  danger: "disabled:bg-disabled disabled:text-muted",
 };
 
 export function Button({

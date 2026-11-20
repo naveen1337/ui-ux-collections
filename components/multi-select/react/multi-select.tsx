@@ -187,7 +187,7 @@ export function MultiSelect({
         </span>
         {hasSelection && (
           <span
-            className={`flex shrink-0 items-center justify-center rounded-full bg-primary font-medium text-light ${
+            className={`flex shrink-0 items-center justify-center rounded-full bg-primary font-medium text-white ${
               sm ? "h-5 min-w-5 px-1 text-[0.6875rem]" : "h-6 min-w-6 px-1.5 text-xs"
             }`}
             aria-label={`${selected.length} selected`}
@@ -272,7 +272,7 @@ export function MultiSelect({
                       checked ? "border-primary bg-primary" : "border-border bg-transparent"
                     }`}
                   >
-                    {checked && <CheckIcon className="h-4 w-4 text-light" />}
+                    {checked && <CheckIcon className="h-4 w-4 text-white" />}
                   </span>
                   <span className="truncate">{option.label}</span>
                 </li>

@@ -82,7 +82,7 @@ export function RadioGroup({
                   aria-hidden="true"
                   className={`flex h-4 w-4 items-center justify-center rounded-full border transition-colors duration-150 peer-focus-visible:ring-2 peer-focus-visible:ring-light peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-bg ${
                     isDisabled
-                      ? "border-subtle bg-subtle"
+                      ? "border-disabled bg-disabled"
                       : invalid
                         ? "border-error"
                         : checked

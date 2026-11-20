@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { AppNavbar } from "../components/app_navbar";
 import { AppNodeSidebar } from "../components/app_node-sidebar";
 import type { NodeCategory } from "../../../components/side-bars/react/node-sidebar";
@@ -144,8 +144,21 @@ function Content({ children }: { children: ReactNode }) {
   return <div className="min-w-0 flex-1">{children}</div>;
 }
 
+type ThemeMode = "dark" | "light";
+const THEME_STORAGE_KEY = "ui-ux-theme";
+
 export function Layout() {
   const navigate = useNavigate();
+  const [mode, setMode] = useState<ThemeMode>(() =>
+    localStorage.getItem(THEME_STORAGE_KEY) === "light" ? "light" : "dark",
+  );
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = mode;
+    localStorage.setItem(THEME_STORAGE_KEY, mode);
+  }, [mode]);
+
+  const toggleTheme = () => setMode((m) => (m === "dark" ? "light" : "dark"));
 
   return (
     <div className="flex min-h-screen flex-col bg-bg text-light">
@@ -153,6 +166,8 @@ export function Layout() {
         productName="UI/UX Collections"
         menus={menus}
         user="user@company.com"
+        theme={mode === "dark" ? "dark" : "light"}
+        onThemeToggle={toggleTheme}
         onProductNameClick={() => navigate("/")}
         onMenuItemSelect={(_menu, item) => {
           const route = menuRoutes[item];
@@ -162,7 +177,7 @@ export function Layout() {
       <div className="hidden md:flex min-h-0 flex-1">
         <AppNodeSidebar
           categories={sidebarCategories}
-          theme="gray-100"
+          theme={mode === "dark" ? "gray-100" : "white"}
           footerLabel="UI/UX Collections"
           onNodeSelect={(node) => {
             const route = nodeRoutes[node.id];

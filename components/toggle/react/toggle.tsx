@@ -79,7 +79,7 @@ export function Toggle({
           aria-hidden="true"
           className={`relative inline-flex shrink-0 items-center rounded-full border transition-colors duration-150 group-focus-visible:ring-2 group-focus-visible:ring-light group-focus-visible:ring-offset-2 group-focus-visible:ring-offset-bg ${track} ${
             disabled
-              ? "border-subtle bg-subtle"
+              ? "border-disabled bg-disabled"
               : isOn
                 ? "border-success bg-success"
                 : "border-border bg-border group-hover:bg-muted"

@@ -14,11 +14,28 @@
   --color-error: #da1e28;
   --color-info: #1192e8;
 
+  /* Dark (default) */
   --color-bg: #161616;
   --color-surface: #262626;
   --color-surface-hover: #393939;
   --color-border: #525252;
   --color-muted: #8d8d8d;
   --color-subtle: #c6c6c6;
+  --color-disabled: #c6c6c6;
   --color-light: #f4f4f4;
+
+  /* Static light gray (does not change with theme) */
+  --color-paper: #f4f4f4;
+}
+
+/* Light theme: same token names, light values. Applied via <html data-theme="light">. */
+:root[data-theme="light"] {
+  --color-bg: #f4f4f4;
+  --color-surface: #ffffff;
+  --color-surface-hover: #e8e8e8;
+  --color-border: #c6c6c6;
+  --color-muted: #6f6f6f;
+  --color-subtle: #393939;
+  --color-disabled: #e0e0e0;
+  --color-light: #161616;
 }

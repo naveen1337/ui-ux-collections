@@ -84,7 +84,7 @@ export function Checkbox({
             aria-hidden="true"
             className={`flex h-4 w-4 items-center justify-center border transition-colors duration-150 peer-focus-visible:ring-2 peer-focus-visible:ring-light peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-bg ${
               disabled
-                ? "border-subtle bg-subtle"
+                ? "border-disabled bg-disabled"
                 : invalid
                   ? "border-error bg-transparent"
                   : active
