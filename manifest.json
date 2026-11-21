@@ -122,6 +122,26 @@
       "dependencies": []
     },
     {
+      "name": "caret-left-icon",
+      "framework": "react",
+      "path": "components/icons/react/caret-left-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "caret-right-icon",
+      "framework": "react",
+      "path": "components/icons/react/caret-right-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
       "name": "bell-icon",
       "framework": "react",
       "path": "components/icons/react/bell-icon.tsx",
@@ -755,6 +775,34 @@
         "icons/react/warning-icon",
         "icons/react/error-icon",
         "icons/react/close-icon"
+      ]
+    },
+    {
+      "name": "pagination",
+      "framework": "react",
+      "path": "components/paginations/react/pagination.tsx",
+      "variants": [
+        "default",
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "first-page",
+        "last-page"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light",
+        "color.surface",
+        "color.surface-hover"
+      ],
+      "dependencies": [
+        "icons/react/caret-left-icon",
+        "icons/react/caret-right-icon",
+        "icons/react/chevron-down-icon"
       ]
     }
   ],

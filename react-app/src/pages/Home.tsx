@@ -101,6 +101,11 @@ const components = [
     description: "Carbon-style notifications: inline, toast, actionable and callout across four statuses.",
     href: "/notification",
   },
+  {
+    name: "Pagination",
+    description: "Carbon-style pagination bar with items-per-page and page selects plus prev/next navigation.",
+    href: "/pagination",
+  },
 ];
 
 export function Home() {

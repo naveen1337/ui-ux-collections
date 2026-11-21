@@ -14,6 +14,7 @@ import {
   FilePlusIcon,
 } from "../../../components/icons/react/node-icons";
 import { ChevronDownIcon } from "../../../components/icons/react/chevron-down-icon";
+import { CaretRightIcon } from "../../../components/icons/react/caret-right-icon";
 import { PanelIcon } from "../../../components/icons/react/panel-icon";
 import { KebabIcon } from "../../../components/icons/react/kebab-icon";
 import { WarningIcon } from "../../../components/icons/react/warning-icon";
@@ -41,6 +42,7 @@ const menus = [
         "Breadcrumb",
         "Inline Loading",
         "Notification",
+        "Pagination",
         "Node Sidebar",
         "Resource Card",
       ],
@@ -91,6 +93,7 @@ const sidebarCategories: NodeCategory[] = [
       { id: "breadcrumb", label: "Breadcrumb", icon: <ChevronDownIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "inline-loading", label: "Inline Loading", icon: <FilePlusIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "notification", label: "Notification", icon: <WarningIcon className="h-4 w-4" />, tags: ["new"], recent: true },
+      { id: "pagination", label: "Pagination", icon: <CaretRightIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "form-progress", label: "Form Progress", icon: <FilePlusIcon className="h-4 w-4" /> },
     ],
   },
@@ -137,6 +140,7 @@ const menuRoutes: Record<string, string> = {
   "Breadcrumb": "/breadcrumb",
   "Inline Loading": "/inline-loading",
   Notification: "/notification",
+  Pagination: "/pagination",
   "Node Sidebar": "/node-sidebar",
   "Resource Card": "/cards",
 };
@@ -162,6 +166,7 @@ const nodeRoutes: Record<string, string> = {
   breadcrumb: "/breadcrumb",
   "inline-loading": "/inline-loading",
   notification: "/notification",
+  pagination: "/pagination",
   "metric-card": "/metrics",
   "resource-card": "/cards",
 };

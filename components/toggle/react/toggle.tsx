@@ -10,7 +10,7 @@ import { useId, useState, type ButtonHTMLAttributes } from "react";
 export type ToggleSize = "sm" | "md";
 
 export interface ToggleProps
-  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onChange" | "type"> {
+  extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onChange" | "type" | "onToggle"> {
   label?: string;
   labelA?: string;
   labelB?: string;
