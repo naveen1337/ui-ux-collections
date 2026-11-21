@@ -16,6 +16,7 @@ import {
 import { ChevronDownIcon } from "../../../components/icons/react/chevron-down-icon";
 import { PanelIcon } from "../../../components/icons/react/panel-icon";
 import { KebabIcon } from "../../../components/icons/react/kebab-icon";
+import { WarningIcon } from "../../../components/icons/react/warning-icon";
 
 const menus = [
     {
@@ -37,6 +38,9 @@ const menus = [
         "Toggle",
         "Tag",
         "Tree View",
+        "Breadcrumb",
+        "Inline Loading",
+        "Notification",
         "Node Sidebar",
         "Resource Card",
       ],
@@ -84,6 +88,9 @@ const sidebarCategories: NodeCategory[] = [
       { id: "accordion", label: "Accordion", icon: <ChevronDownIcon className="h-4 w-4" />, recent: true },
       { id: "menu", label: "Menu", icon: <KebabIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "tree-view", label: "Tree View", icon: <FileSearchIcon className="h-4 w-4" />, tags: ["new"], recent: true },
+      { id: "breadcrumb", label: "Breadcrumb", icon: <ChevronDownIcon className="h-4 w-4" />, tags: ["new"], recent: true },
+      { id: "inline-loading", label: "Inline Loading", icon: <FilePlusIcon className="h-4 w-4" />, tags: ["new"], recent: true },
+      { id: "notification", label: "Notification", icon: <WarningIcon className="h-4 w-4" />, tags: ["new"], recent: true },
       { id: "form-progress", label: "Form Progress", icon: <FilePlusIcon className="h-4 w-4" /> },
     ],
   },
@@ -127,6 +134,9 @@ const menuRoutes: Record<string, string> = {
   "Toggle": "/toggle",
   "Tag": "/tag",
   "Tree View": "/tree-view",
+  "Breadcrumb": "/breadcrumb",
+  "Inline Loading": "/inline-loading",
+  Notification: "/notification",
   "Node Sidebar": "/node-sidebar",
   "Resource Card": "/cards",
 };
@@ -149,6 +159,9 @@ const nodeRoutes: Record<string, string> = {
   menu: "/menu",
   "form-progress": "/form-progress",
   "tree-view": "/tree-view",
+  breadcrumb: "/breadcrumb",
+  "inline-loading": "/inline-loading",
+  notification: "/notification",
   "metric-card": "/metrics",
   "resource-card": "/cards",
 };

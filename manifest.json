@@ -653,6 +653,109 @@
       "dependencies": [
         "icons/react/chevron-down-icon"
       ]
+    },
+    {
+      "name": "breadcrumb",
+      "framework": "react",
+      "path": "components/breadcrumbs/react/breadcrumb.tsx",
+      "variants": [
+        "default",
+        "link",
+        "current"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "inline-loading",
+      "framework": "react",
+      "path": "components/loaders/react/inline-loading.tsx",
+      "variants": [
+        "active",
+        "inactive",
+        "finished",
+        "error"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.success",
+        "color.error",
+        "color.muted",
+        "color.light"
+      ],
+      "dependencies": [
+        "icons/react/checkmark-icon",
+        "icons/react/error-icon"
+      ]
+    },
+    {
+      "name": "checkmark-icon",
+      "framework": "react",
+      "path": "components/icons/react/checkmark-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "error-icon",
+      "framework": "react",
+      "path": "components/icons/react/error-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "information-icon",
+      "framework": "react",
+      "path": "components/icons/react/information-icon.tsx",
+      "variants": [
+        "default"
+      ],
+      "tokens": [],
+      "dependencies": []
+    },
+    {
+      "name": "notification",
+      "framework": "react",
+      "path": "components/notifications/react/notification.tsx",
+      "variants": [
+        "inline",
+        "toast",
+        "callout",
+        "actionable",
+        "informational",
+        "success",
+        "warning",
+        "error",
+        "low-contrast",
+        "high-contrast"
+      ],
+      "tokens": [
+        "color.primary",
+        "color.success",
+        "color.warning",
+        "color.error",
+        "color.surface-hover",
+        "color.border",
+        "color.muted",
+        "color.subtle",
+        "color.light"
+      ],
+      "dependencies": [
+        "icons/react/information-icon",
+        "icons/react/checkmark-icon",
+        "icons/react/warning-icon",
+        "icons/react/error-icon",
+        "icons/react/close-icon"
+      ]
     }
   ],
   "tokens": {

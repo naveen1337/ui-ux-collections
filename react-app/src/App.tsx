@@ -20,6 +20,9 @@ import { AccordionPage } from "./pages/Accordion";
 import { MenuPage } from "./pages/Menu";
 import { TagPage } from "./pages/Tag";
 import { TreeViewPage } from "./pages/TreeView";
+import { BreadcrumbPage } from "./pages/Breadcrumb";
+import { InlineLoadingPage } from "./pages/InlineLoading";
+import { NotificationPage } from "./pages/Notification";
 
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/tag" element={<TagPage />} />
           <Route path="/tree-view" element={<TreeViewPage />} />
+          <Route path="/breadcrumb" element={<BreadcrumbPage />} />
+          <Route path="/inline-loading" element={<InlineLoadingPage />} />
+          <Route path="/notification" element={<NotificationPage />} />
           <Route path="/cards" element={<Cards />} />
         </Route>
       </Routes>

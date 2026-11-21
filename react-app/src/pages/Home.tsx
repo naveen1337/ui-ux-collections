@@ -86,6 +86,21 @@ const components = [
     description: "Carbon-style hierarchical tree with expandable branches, leaf nodes, selection and keyboard navigation.",
     href: "/tree-view",
   },
+  {
+    name: "Breadcrumb",
+    description: "Carbon-style breadcrumb trails with links, a current-page item and keyboard-accessible navigation.",
+    href: "/breadcrumb",
+  },
+  {
+    name: "Inline Loading",
+    description: "Carbon-style inline loading with active, finished, error and inactive states.",
+    href: "/inline-loading",
+  },
+  {
+    name: "Notification",
+    description: "Carbon-style notifications: inline, toast, actionable and callout across four statuses.",
+    href: "/notification",
+  },
 ];
 
 export function Home() {
